@@ -1,5 +1,8 @@
 name: First Workflow
-on: [workflow_dispatch, repository_dispatch]
+on: 
+  workflow_dispatch:
+  repository_dispatch:
+      types: ['xyz']
 jobs:
   first-job:
     runs-on: ubuntu-20.04
